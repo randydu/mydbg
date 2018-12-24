@@ -1,0 +1,22 @@
+{
+  "name": "mydbg",
+  "version": "1.0.0",
+  "description": "Simple wrapper of debug module with debug level control.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randydu/mydbg.git"
+  },
+  "keywords": [
+    "debug"
+  ],
+  "author": "randydu@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/randydu/mydbg/issues"
+  },
+  "homepage": "https://github.com/randydu/mydbg#readme"
+}

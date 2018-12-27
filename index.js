@@ -43,9 +43,15 @@ module.exports = (name)=>{
     const dbg = require('debug');
 
     let result = {
-        throw_error(msg){
+        /**
+         * Output error message and throw an error instance
+         * 
+         * @param {Error | string} e - Error message or Error-like object
+         */
+        throw_error(e){
+            let msg = e.message || e;
             this.err(msg);
-            throw new Error(msg);
+            throw (e instanceof Error) ? e : new Error(msg);
         }
     }
 

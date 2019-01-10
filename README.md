@@ -97,14 +97,19 @@ const dbg = require('mydbg')('srv');
 dbg.trace('server starts');
 ```
 
-- throw_err(message)
+- throw_error(message | error)
 
 outputs the message as *err* level and throw an *Error* instance.
 
 ```js
+
+if(something_bad_detected){
+    dbg.throw_error('critial error!');
+}
+
 try {
     ...
 }catch(ex){
-    dbg.throw_err(ex.message);
+    dbg.throw_error(ex);
 }
 ```
